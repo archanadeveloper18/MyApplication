@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="cash_back">$1.00 cash back</string>
+    <string name="nameofproduct">Scotch brite </string>
+</resources>
