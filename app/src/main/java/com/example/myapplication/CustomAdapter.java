@@ -50,7 +50,7 @@ public class CustomAdapter extends BaseAdapter {
 
         //set data
         name.setText(itemsList.get(position).getName());
-        double currentValueDouble = getCurrentValue();
+        double currentValueDouble = getCurrentValue();          // This is the part where i am not getting.
         value.setText(String.valueOf(itemsList.get(position).getCurrentValue()));
 
         //set image
