@@ -4,7 +4,6 @@ public class items {
 
     public String name;
     public String url;
-    public Double currentValue;
 
 
     public String getName() {
@@ -22,13 +21,4 @@ public class items {
     public void setUrl(String url) {
         this.url = url;
     }
-
-    public Double getCurrentValue(){
-        return currentValue;
-    }
-
-    public void setCurrentValue(Double currentValue){
-        this.currentValue = currentValue;
-    }
-
 }
