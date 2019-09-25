@@ -4,6 +4,7 @@ public class items {
 
     public String name;
     public String url;
+    public String current_value;
 
 
     public String getName() {
@@ -20,5 +21,14 @@ public class items {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+    
+    public String getCurrentValue(){
+        return current_value;
+    }
+
+    public void setCurrentValue(String current_value){
+        this.current_value = current_value;
+
     }
 }
