@@ -49,8 +49,7 @@ public class CustomAdapter extends BaseAdapter {
         ImageView image = view.findViewById(R.id.imageView);
 
         //set data
-        name.setText(itemsList.get(position).getName());
-        double currentValueDouble = getCurrentValue();          // This is the part where i am not getting.
+        name.setText(itemsList.get(position).getName());       
         value.setText(String.valueOf(itemsList.get(position).getCurrentValue()));
 
         //set image
