@@ -3,4 +3,10 @@
 
     <string name="cash_back">$1.00 cash back</string>
     <string name="nameofproduct">Scotch brite </string>
+    
+    <string name="search">Search</string>
+    <string name="appdefaultSetting">App Default Setting</string>
+    <string name="thisdefault">This is the app default setting</string>
+
+    <string name="setting">SettingActivity</string>
 </resources>
