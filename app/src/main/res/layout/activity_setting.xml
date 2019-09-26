@@ -4,27 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="12dp"
-    android:orientation="vertical"
+    android:orientation="horizontal"
+    android:background="@color/colorgrey"
     tools:context=".SettingActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
 
-    <TextView
-        android:id="@+id/textSetting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        android:text="@string/appdefaultSetting"/>
+        <ImageView
+            android:id="@+id/grocery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_grocery"
+            android:layout_margin="8dp"/>
+        
+        <TextView
+            android:id="@+id/grocerytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/grocery"
+            android:text="@string/grocery"
+            android:textColor="@color/textcolor"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+        
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_below="@+id/grocery"
+            android:src="@drawable/ic_phone" />
+        
+        <TextView
+            android:id="@+id/phonetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/phone"
+            android:layout_below="@+id/grocerytext"
+            android:text="@string/shopping"
+            android:layout_margin="12dp"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+            android:textSize="12sp" />
 
-    <TextView
-        android:id="@+id/textdefault"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        android:text="@string/thisdefault"/>
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home"
+            android:layout_below="@id/phone"
+            android:layout_margin="8dp"/>
+        
+        <TextView
+            android:id="@+id/hometext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/home"
+            android:layout_below="@+id/phonetext"
+            android:text="@string/home"
+            android:layout_margin="11dp"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+        
+        <ImageView
+            android:id="@+id/travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_travel"
+            android:layout_below="@id/home"
+            android:layout_margin="8dp"/>
+        
+        <TextView
+            android:id="@+id/traveltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/travel"
+            android:layout_below="@+id/hometext"
+            android:text="@string/travel"
+            android:textColor="@color/textcolor"
+            android:layout_margin="11dp"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+        
+        <ImageView
+            android:id="@+id/pharmacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_pharmacy"
+            android:layout_below="@id/travel"
+            android:layout_margin="8dp"/>
+        
+        <TextView
+            android:id="@+id/pharmacytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pharmacy"
+            android:layout_below="@+id/traveltext"
+            android:text="@string/pharmacy"
+            android:textColor="@color/textcolor"
+            android:layout_margin="12dp"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
 
+        <ImageView
+            android:id="@+id/restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_restaurant"
+            android:layout_below="@id/pharmacy"
+            android:layout_margin="8dp"/>
+        
+        <TextView
+            android:id="@+id/restauranttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/restaurant"
+            android:layout_below="@+id/pharmacytext"
+            android:text="@string/resturant"
+            android:textColor="@color/textcolor"
+            android:layout_margin="11dp"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+    </RelativeLayout>
 </LinearLayout>
