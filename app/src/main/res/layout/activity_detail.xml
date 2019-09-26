@@ -5,9 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="8dp"
     android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
     android:layout_marginTop="12dp"
+    android:layout_marginBottom="10dp"
     tools:context=".DetailActivity">
 
     <ImageView
@@ -20,14 +21,70 @@
         android:scaleType="fitCenter"
         android:src="@drawable/dove" />
 
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="20dp"
+        android:text="@string/cash_back"
+        android:textColor="@color/textcolor"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/textcash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView2"
-        android:layout_marginTop="34dp"
-        android:text="@string/cash_back"
+        android:layout_below="@+id/textname"
+        android:layout_marginTop="20dp"
+        android:text="@string/nameofproduct"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/textcolor"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:id="@+id/textdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textcash"
+        android:layout_marginTop="20dp"
+        android:text="@string/productdescription"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/textcolor" />
+
+    <TextView
+        android:id="@+id/textterms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textdescription"
+        android:layout_marginTop="20dp"
+        android:text="@string/productterms"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/instore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textterms"
+        android:layout_marginTop="20dp"
+        android:text="@string/instock"
+        android:textColor="@color/colorred"
         android:textSize="12sp"
         android:textStyle="bold" />
 
+    <com.like.LikeButton
+        android:id="@+id/star_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/instore"
+        android:layout_margin="20dp"
+        app:icon_size="25dp"
+        app:icon_type="heart"/>
+
 </RelativeLayout>
+
