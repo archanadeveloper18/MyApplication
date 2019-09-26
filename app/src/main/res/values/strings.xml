@@ -1,12 +1,23 @@
 <resources>
     <string name="app_name">My Application</string>
 
-    <string name="cash_back">$1.00 cash back</string>
+   <string name="cash_back">$1.00 cash back</string>
     <string name="nameofproduct">Scotch brite </string>
-    
+    <string name="productdescription">Any variety - 2 ct. pack or larger</string>
+    <string name="productterms">Rebate valid on Scotch-Brite® Scrub Dots Non-Scratch Scrub Sponges for any variety, 2 ct. pack or larger.</string>
+    <string name="instock">IN STORE</string>
+
     <string name="search">Search</string>
     <string name="appdefaultSetting">App Default Setting</string>
     <string name="thisdefault">This is the app default setting</string>
 
-    <string name="setting">SettingActivity</string>
+    <string name="setting">BrowseByCategory</string>
+    <string name="details">Products</string>
+
+    <string name="grocery">Grocery</string>
+    <string name="shopping">Online Shopping</string>
+    <string name="home">Home &amp; Electronics</string>
+    <string name="travel">Travel</string>
+    <string name="pharmacy">Pharmacy</string>
+    <string name="resturant">Restaurant &amp; Bars</string>
 </resources>
